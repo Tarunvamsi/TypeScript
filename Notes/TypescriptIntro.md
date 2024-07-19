@@ -27,5 +27,24 @@
 - Typescript never runs at all line by line
 - Typescript is a language that is something transpiled down to "javascript"
 
-- main.ts -->(tscompiler) --> main.js  -->Runs in browser
+- main.ts -->(tscompiler) --> main.js -->Runs in browser
 - We only convert typescript code to javascript
+- if we have any error the ts to js transpilation will fails and returns error
+- i.e., We have added compiled checks to the javascript --> so we can write catch run time errors , we can catch durimg the compile time
+- TSC - types : esbuild , SWC
+
+- tsconfig.json --> says how do we convert typescript file to js file
+
+- command : tsc -b --> transpiler a.ts to a.js
+
+- Typescript is only syntatical language, so we cant run ts file , at the end we only run .js file
+
+
+## Basic types in TypeScript 
+
+- number, string , boolean, null, undefined
+- How Typescript benefit --> as codebase increase , it will be helpful to know what it expects
+
+- Typescript can infer the return type :: type inference 
+- a: number , b:number --> returns : number 
+- good practice to write the return type
