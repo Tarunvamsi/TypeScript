@@ -38,10 +38,33 @@ console.log(legal);
 
 //write a function and pass function as parameter , tha prints aftewr 1 second
 
-function printAfter1s(fn: ()=> void) {
+function printAfter1s(fn: () => void) {
   setTimeout(fn, 1000);
 }
 
-printAfter1s(function fn(){
-    console.log("Printing after 1 seconds")
-})
+printAfter1s(function fn() {
+  console.log("Printing after 1 seconds");
+});
+
+//islegal using typescript with user object
+
+interface User {
+  firstName: string;
+  lastName: string;
+  age: number;
+  email?: string; //string but optional
+}
+
+
+
+function greet(user: User) {
+  console.log("hwy " + user.firstName);
+}
+
+const resp = greet({
+  firstName: "ihasb",
+  lastName : "jhsdfk",
+  age: 20
+});
+
+console.log(res)
